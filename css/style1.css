@@ -1,0 +1,321 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    background: url('../images/bg.jpg') no-repeat -23px 55px;
+}
+ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+.tit{
+    position: relative;
+}
+.tit li span:nth-child(1){
+    display: inline-block;
+    margin-right: 10px;
+    width: 23px;
+    height: 1px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: white;
+    padding: 5px 0;
+    background-clip:content-box;
+    vertical-align: middle;
+}
+.tit li span:nth-child(2){
+    color: white;
+    vertical-align: middle;
+}
+.tit li:nth-child(1){
+    padding: 18px 40px;
+    width: 95px;
+    background-color: crimson;
+    font-size: 12px;
+}
+.tit li:nth-child(2){
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 3px;
+    width: 134px;
+    margin: auto;
+}
+.tit li:nth-child(3) a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    width: 96px;
+    border-left: 1px solid darkgray;
+    padding: 18px 30px;
+}
+.tit li:nth-child(3) a:hover{
+    border-bottom: 1px solid darkgray;
+    background-color: whitesmoke;
+}
+.menu{
+    width: 100%;
+    height: 0px;
+    background-color: white;
+    opacity: .9;
+    transition-duration: 1s;
+}
+.tit li:nth-child(1):hover ~ .menu{
+    height: 500px;
+}
+.tit li:nth-child(5){
+    position: absolute;
+    left: 30px;
+    top: 82px;
+    z-index: -1;
+}
+.tit li:nth-child(6){
+    position: absolute;
+    right: 30px;
+    top: 82px;
+    z-index: -1;
+}
+.tit li:nth-child(6):hover{
+    filter: brightness(.75);
+}
+.tit li:nth-child(7){
+    position: fixed;
+    width: 203px;
+    height: 461px;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+    background: url("../images/dl_bg_44fc686.png") no-repeat;
+}
+.tit li:nth-child(7) img{
+    margin-left: 58px;
+    margin-top: 10px;
+    width: 140px;
+    height: 140px;
+}
+.tit li:nth-child(7) .download:hover{
+    filter: brightness(.75);
+}
+.tit li:nth-child(7) .packup{
+    position: absolute;
+    top: 5px;
+    left: -42px;
+    width: 24px;
+    height: 24px;
+    cursor:pointer;
+}
+.tit li:nth-child(7) span{
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 17px;
+    width: 0;
+    font-size: 20px;
+    color: white;
+    cursor:pointer;
+}
+.tit li:nth-child(7) img:nth-of-type(4){
+    transform: translateY(-465px);
+    height: 10px;
+    animation: sweep 1s linear infinite alternate;
+}
+@keyframes sweep{
+    100%{
+        transform: translateY(-330px);
+    }
+}
+.new{
+    position: absolute;
+    top: 1100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1200px;
+    z-index: -2;
+}
+.new li{
+    width: 300px;
+    transition-duration: .5s;
+}
+.new li:nth-child(1){
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 380px;
+    height: 63px;
+}
+.new li:nth-child(2){
+    position: absolute;
+    top: 48px;
+    left: 40px;
+    cursor:pointer;
+}
+.new li:nth-child(3){
+    position: absolute;
+    top: 97px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor:pointer;
+}
+.new li:nth-child(4){
+    position: absolute;
+    top: 48px;
+    right: 40px;
+    cursor:pointer;
+}
+.new li:nth-child(5){
+    position: absolute;
+    top: 513px;
+    left: -30px;
+    cursor:pointer;
+}
+.new li:nth-child(6){
+    position: absolute;
+    top: 448px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor:pointer;
+}
+.new li:nth-child(7){
+    position: absolute;
+    top: 472px;
+    right: 40px;
+    cursor:pointer;
+}
+.new li + li:hover{
+    transform: translateY(-20px);
+}
+.characteristic{
+    position: absolute;
+    top: 2100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 800px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    perspective-origin: center;
+    width: 1200px;
+    z-index: -2;
+}
+.characteristic li:nth-child(1){
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 329px;
+    height: 63px;
+}
+.characteristic li:nth-child(2){
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 811px;
+    border: 3px solid gold;
+}
+.characteristic .mask::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgba(0, 0, 0, .5);
+}
+.characteristic li:nth-child(3){
+    width: 810px;
+    border: 3px solid gold;
+    transform-origin: left;
+    transform:translate3d(30px,80px,-150px) rotateY(30deg);
+}
+.characteristic li:nth-child(4){
+    width: 810px;
+    border: 3px solid gold;
+    transform-origin: 800px;
+    transform:translate3d(350px,-537px,-150px) rotateY(-30deg);
+}
+.characteristic li:nth-child(5){
+    position: absolute;
+    top: 384px;
+    left: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.characteristic li:nth-child(6){
+    position: absolute;
+    top: 384px;
+    right: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.bottom{
+    position: absolute;
+    top: 2950px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 865px;
+    height: 200px;
+}
+.bottom li{
+    display: inline-block;
+}
+.bottom a,span{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+.bottom a:nth-of-type(9){
+    position: absolute;
+    right: 47px;
+    line-height: 28px;
+    background-color: brown;
+}
+.bottom img{
+    margin-right: 5px;
+}
+.bottom img:hover{
+    cursor: pointer;
+}
+.bottom a:hover{
+    text-decoration: underline;
+}
+
+.bottom .iconfont{
+    margin-right: 20px;
+    vertical-align: middle;
+    font-size: 25px;
+    color: rgb(206, 177, 104);
+}
+.share{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 440px;
+}
+.bottom .share span{
+    vertical-align: middle;
+    color: rgb(206, 177, 104);
+}
+.bottom .share i:hover{
+    color: red;
+    cursor: pointer;
+}
+.bottom .share i:hover span{
+    color: red;
+}
+.bottom li:nth-of-type(7){
+    margin-top: 20px;
+}
